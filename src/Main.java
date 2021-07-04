@@ -7,7 +7,7 @@ public class Main {
         Product product1 = new Product(1, "bread", 10);
         Product product2 = new Product(2, "ice-cream", 20);
         Product product3 = new Product(3, "milk", 30);
-        Product product4 = new Product(4, "meat", 40);
+        Product product4 = new Product(3, "meat", 40);
 
 
         store.addToList(product1);
@@ -24,15 +24,17 @@ public class Main {
             }
         });*/
 
-        store.removeProduct(1, product1);
+        store.removeProduct(1);
 
         System.out.println(store.getProductList());
         System.out.println();
 
-        store.changeProduct(1, product4);
+        store.changeProduct(product4);
 
         System.out.println(store.getProductList());
         System.out.println();
+
+
     }
 }
 
