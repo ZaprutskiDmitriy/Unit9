@@ -13,24 +13,26 @@ public class Main {
         store.addToList(product1);
         store.addToList(product2);
         store.addToList(product3);
+        store.addToList(product1);
+        System.out.println(store.getProductList());
+        System.out.println();
 
-        store.getProductList();
-
-/*
-        store.productList.sort(new Comparator<Product>() {
+        /*store.productList.sort(new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
                 return o1.getPrice().compareTo(o2.getPrice());
             }
-        });
-*/
+        });*/
 
         store.removeProduct(1, product1);
 
-        store.getProductList();
+        System.out.println(store.getProductList());
+        System.out.println();
 
         store.changeProduct(1, product4);
 
-        store.getProductList();
+        System.out.println(store.getProductList());
+        System.out.println();
     }
 }
+
